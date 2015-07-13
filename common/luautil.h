@@ -3,7 +3,6 @@
 //  LuaPluginiOS
 //
 //  Created by Clark Kromenaker on 7/11/15.
-//  Copyright (c) 2015 Hidden Variable Studios. All rights reserved.
 //
 #include "Lua.h"
 

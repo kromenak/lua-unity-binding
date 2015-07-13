@@ -200,11 +200,20 @@ static void buffreplace (LexState *ls, char from, char to) {
     if (p[n] == from) p[n] = to;
 }
 
+#ifndef __ANDROID__
 
+/* Android doesn't have localeconv() */
 #if !defined(getlocaledecpoint)
 #define getlocaledecpoint()	(localeconv()->decimal_point[0])
 #endif
 
+#else
+
+#if !defined(getlocaledecpoint)
+#define getlocaledecpoint() ('.')
+#endif
+
+#endif
 
 #define buff2d(b,e)	luaO_str2d(luaZ_buffer(b), luaZ_bufflen(b) - 1, e)
 
