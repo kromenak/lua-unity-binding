@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B17306A1B547D8E0086022E /* luautil.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B1730691B547D8E0086022E /* luautil.c */; };
 		4B39F9431B50856900294900 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F9071B50856900294900 /* lapi.c */; };
 		4B39F9441B50856900294900 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F9091B50856900294900 /* lauxlib.c */; };
 		4B39F9451B50856900294900 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F90B1B50856900294900 /* lbaselib.c */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B1730691B547D8E0086022E /* luautil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = luautil.c; sourceTree = "<group>"; };
 		4B39F8FC1B50854800294900 /* LuaPluginOSX.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuaPluginOSX.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B39F9001B50854800294900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B39F9071B50856900294900 /* lapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lapi.c; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		4BD607B21B51EC5F007E1C6F /* common */ = {
 			isa = PBXGroup;
 			children = (
+				4B1730691B547D8E0086022E /* luautil.c */,
 				4BD607B31B51EC5F007E1C6F /* luautil.h */,
 			);
 			name = common;
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B39F9631B50856900294900 /* lvm.c in Sources */,
+				4B17306A1B547D8E0086022E /* luautil.c in Sources */,
 				4B39F95D1B50856900294900 /* ltable.c in Sources */,
 				4B39F94E1B50856900294900 /* lfunc.c in Sources */,
 				4B39F9491B50856900294900 /* lctype.c in Sources */,

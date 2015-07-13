@@ -223,13 +223,13 @@ public static class LuaNativeBinding
 
 	// Load and Call functions (load and run Lua code).
 	[DllImport(kLibName)]
-	public static extern void lua_callk(IntPtr luaState, int nargs, int nresults, int ctx, IntPtr function);
+	public static extern int lua_callk(IntPtr luaState, int nargs, int nresults, int ctx, IntPtr function);
 
 	[DllImport(kLibName)]
 	public static extern int lua_getctx(IntPtr luaState, out int ctx);
 
 	[DllImport(kLibName)]
-	public static extern void lua_pcallk(IntPtr luaState, int nargs, int nresults, int errfunc, int ctx, IntPtr function);
+	public static extern int lua_pcallk(IntPtr luaState, int nargs, int nresults, int errfunc, int ctx, IntPtr function);
 
 	//TODO: lua_load
 
@@ -354,7 +354,7 @@ public static class LuaNativeBinding
 	public static extern int luaL_loadbufferx(IntPtr luaState, string buffer, uint size, string name, string mode);
 
 	[DllImport(kLibName, CharSet = CharSet.Ansi)]
-	public static extern void luaL_loadstring(IntPtr luaState, string s);
+	public static extern int luaL_loadstring(IntPtr luaState, string s);
 	
 	[DllImport(kLibName)]
 	public static extern IntPtr luaL_newstate();

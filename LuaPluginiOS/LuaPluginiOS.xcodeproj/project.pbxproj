@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1730681B547D5F0086022E /* luautil.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B1730671B547D5F0086022E /* luautil.c */; };
 		4B39F97B1B50921C00294900 /* libLuaPluginiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B39F96F1B50921C00294900 /* libLuaPluginiOS.a */; };
 		4B39F9C61B50924200294900 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F98A1B50924200294900 /* lapi.c */; };
 		4B39F9C71B50924200294900 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F98C1B50924200294900 /* lauxlib.c */; };
@@ -69,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B1730671B547D5F0086022E /* luautil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = luautil.c; path = ../../common/luautil.c; sourceTree = "<group>"; };
 		4B39F96F1B50921C00294900 /* libLuaPluginiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLuaPluginiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B39F97A1B50921C00294900 /* LuaPluginiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuaPluginiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B39F9801B50921C00294900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		4B39F9711B50921C00294900 /* LuaPluginiOS */ = {
 			isa = PBXGroup;
 			children = (
+				4B1730671B547D5F0086022E /* luautil.c */,
 				4BD607B11B51EC0A007E1C6F /* luautil.h */,
 				4B39F9E91B50928900294900 /* LuaPluginiOS.h */,
 				4B39F9EA1B50928900294900 /* LuaPluginiOS.m */,
@@ -388,6 +391,7 @@
 				4B39F9D51B50924200294900 /* llex.c in Sources */,
 				4B39F9CA1B50924200294900 /* lcode.c in Sources */,
 				4B39F9CF1B50924200294900 /* ldo.c in Sources */,
+				4B1730681B547D5F0086022E /* luautil.c in Sources */,
 				4B39F9DA1B50924200294900 /* lopcodes.c in Sources */,
 				4B39F9E71B50924200294900 /* lzio.c in Sources */,
 				4B39F9EB1B50928900294900 /* LuaPluginiOS.m in Sources */,

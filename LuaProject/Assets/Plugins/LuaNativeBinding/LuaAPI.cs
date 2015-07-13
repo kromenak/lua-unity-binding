@@ -71,6 +71,19 @@ public static class LuaAPI
 		LUA_GCINC = 11
 	}
 
+	private static int registryIndex = -1;
+	public static int LUA_REGISTRYINDEX
+	{
+		get 
+		{
+			if(registryIndex < 0)
+			{
+				registryIndex = LuaNativeBinding.luautil_getregistryindex();
+			}
+			return registryIndex;
+		}
+	}
+
     /***************************************
      * PRIVATE VARIABLES
      **************************************/
@@ -392,15 +405,15 @@ public static class LuaAPI
 	}
 
 	// Load and Call Functions (Load and Run Lua Code)
-	public static void lua_callk(LuaState state, int argCount, int resultCount, int ctx, LuaCFunction function)
+	public static int lua_callk(LuaState state, int argCount, int resultCount, int ctx, LuaCFunction function)
 	{
 		IntPtr funcPtr = Marshal.GetFunctionPointerForDelegate(function);
-		LuaNativeBinding.lua_callk(state, argCount, resultCount, ctx, funcPtr);
+		return LuaNativeBinding.lua_callk(state, argCount, resultCount, ctx, funcPtr);
 	}
 
-	public static void lua_call(LuaState state, int argCount, int resultCount)
+	public static int lua_call(LuaState state, int argCount, int resultCount)
 	{
-		LuaNativeBinding.lua_callk(state, argCount, resultCount, 0, IntPtr.Zero);
+		return LuaNativeBinding.lua_callk(state, argCount, resultCount, 0, IntPtr.Zero);
 	}
 
 	public static int lua_getctx(LuaState state, out int ctx)
@@ -633,7 +646,7 @@ public static class LuaAPI
 
 	public static uint luaL_optunsigned(LuaState state, int argNum, uint def)
 	{
-		return LuaNativeBinding.luaL_optunsigned(LuaState, argNum, def);
+		return LuaNativeBinding.luaL_optunsigned(state, argNum, def);
 	}
 
 	public static void luaL_checkstack(LuaState state, int size, string message)
@@ -717,9 +730,9 @@ public static class LuaAPI
 		return LuaNativeBinding.luaL_loadbufferx(state, buffer, (uint)buffer.Length, name, mode);
 	}
 
-	public static void luaL_loadstring(LuaState luaState, string s)
+	public static int luaL_loadstring(LuaState luaState, string s)
 	{
-		LuaNativeBinding.luaL_loadstring(luaState, s);
+		return LuaNativeBinding.luaL_loadstring(luaState, s);
 	}
 
     public static LuaState luaL_newstate() 
@@ -740,7 +753,7 @@ public static class LuaAPI
 
 	//TODO: luaL_setfuncs
 
-	public static int luaL_getsubtable(LuaState state, int index, string fName)
+	public static IntPtr luaL_getsubtable(LuaState state, int index, string fName)
 	{
 		return LuaNativeBinding.luaL_getsubtable(state, index, fName);
 	}

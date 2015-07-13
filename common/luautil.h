@@ -9,14 +9,7 @@
 #ifndef LuaPluginiOS_luautil_h
 #define LuaPluginiOS_luautil_h
 
-int luautil_getregistryindex()
-{
-    return LUA_REGISTRYINDEX;
-}
-
-int luautil_getridxglobals()
-{
-    return LUA_RIDX_GLOBALS;
-}
+int luautil_getregistryindex();
+int luautil_getridxglobals();
 
 #endif
