@@ -39,7 +39,6 @@
 		4B39F9E11B50924200294900 /* ltablib.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F9B61B50924200294900 /* ltablib.c */; };
 		4B39F9E21B50924200294900 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F9B71B50924200294900 /* ltm.c */; };
 		4B39F9E31B50924200294900 /* lua.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F9B91B50924200294900 /* lua.c */; };
-		4B39F9E41B50924200294900 /* luac.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F9BC1B50924200294900 /* luac.c */; };
 		4B39F9E51B50924200294900 /* lundump.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F9BF1B50924200294900 /* lundump.c */; };
 		4B39F9E61B50924200294900 /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F9C11B50924200294900 /* lvm.c */; };
 		4B39F9E71B50924200294900 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B39F9C31B50924200294900 /* lzio.c */; };
@@ -124,7 +123,6 @@
 		4B39F9B91B50924200294900 /* lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua.c; sourceTree = "<group>"; };
 		4B39F9BA1B50924200294900 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
 		4B39F9BB1B50924200294900 /* lua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua.hpp; sourceTree = "<group>"; };
-		4B39F9BC1B50924200294900 /* luac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = luac.c; sourceTree = "<group>"; };
 		4B39F9BD1B50924200294900 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
 		4B39F9BE1B50924200294900 /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
 		4B39F9BF1B50924200294900 /* lundump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lundump.c; sourceTree = "<group>"; };
@@ -257,7 +255,6 @@
 				4B39F9B91B50924200294900 /* lua.c */,
 				4B39F9BA1B50924200294900 /* lua.h */,
 				4B39F9BB1B50924200294900 /* lua.hpp */,
-				4B39F9BC1B50924200294900 /* luac.c */,
 				4B39F9BD1B50924200294900 /* luaconf.h */,
 				4B39F9BE1B50924200294900 /* lualib.h */,
 				4B39F9BF1B50924200294900 /* lundump.c */,
@@ -366,7 +363,6 @@
 				4B39F9CC1B50924200294900 /* lctype.c in Sources */,
 				4B39F9C91B50924200294900 /* lbitlib.c in Sources */,
 				4B39F9E81B50924200294900 /* Makefile in Sources */,
-				4B39F9E41B50924200294900 /* luac.c in Sources */,
 				4B39F9D21B50924200294900 /* lgc.c in Sources */,
 				4B39F9D61B50924200294900 /* lmathlib.c in Sources */,
 				4B39F9DC1B50924200294900 /* lparser.c in Sources */,
